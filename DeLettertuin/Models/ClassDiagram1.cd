@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DeLettertuin.Mediatheek">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAABAAAAAAAAgAQAAAAA=</HashCode>
+      <FileName>Mediatheek.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Gebruiker" />
+      <Property Name="Item" />
+      <Property Name="Uitlening" />
+      <Property Name="Lener" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DeLettertuin.Gebruiker">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Gebruiker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeLettertuin.Item">
+    <Position X="2.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeLettertuin.Uitlening">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Uitlening.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Item" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DeLettertuin.Lener">
+    <Position X="8.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Lener.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Uitlening" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DeLettertuin.Thema">
+    <Position X="7.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Thema.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Mediatheek" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DeLettertuin.Boek">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <InheritanceLine Type="DeLettertuin.Item" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="4.618" />
+        <Point X="3.5" Y="8.5" />
+        <Point X="2" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Thema" Type="DeLettertuin.Thema" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="8.188" />
+        <Point X="3.417" Y="8.188" Type="JumpStart" />
+        <Point X="3.583" Y="8.188" Type="JumpEnd" />
+        <Point X="4.193" Y="8.188" Type="JumpStart" />
+        <Point X="4.36" Y="8.188" Type="JumpEnd" />
+        <Point X="8" Y="8.188" />
+        <Point X="8" Y="6.868" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Boek.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Thema" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DeLettertuin.DVD">
+    <Position X="0.5" Y="11.25" Width="1.5" />
+    <InheritanceLine Type="DeLettertuin.Item" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="4.618" />
+        <Point X="3.5" Y="11.688" />
+        <Point X="2" Y="11.688" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Thema" Type="DeLettertuin.Thema" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="11.438" />
+        <Point X="3.417" Y="11.438" Type="JumpStart" />
+        <Point X="3.583" Y="11.438" Type="JumpEnd" />
+        <Point X="4.184" Y="11.438" Type="JumpStart" />
+        <Point X="4.387" Y="11.438" Type="JumpEnd" />
+        <Point X="8" Y="11.438" />
+        <Point X="8" Y="6.868" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DVD.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Thema" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DeLettertuin.CD">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <InheritanceLine Type="DeLettertuin.Item" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="4.618" />
+        <Point X="3.5" Y="10" />
+        <Point X="2" Y="10" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Thema" Type="DeLettertuin.Thema" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="9.688" />
+        <Point X="3.417" Y="9.688" Type="JumpStart" />
+        <Point X="3.583" Y="9.688" Type="JumpEnd" />
+        <Point X="4.184" Y="9.688" Type="JumpStart" />
+        <Point X="4.36" Y="9.688" Type="JumpEnd" />
+        <Point X="8" Y="9.688" />
+        <Point X="8" Y="6.868" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.06" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CD.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Thema" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DeLettertuin.Verteltas">
+    <Position X="7" Y="11.75" Width="1.5" />
+    <InheritanceLine Type="DeLettertuin.Item" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="4.618" />
+        <Point X="3.5" Y="12.312" />
+        <Point X="7" Y="12.312" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Spel" Type="DeLettertuin.Spel" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="12" />
+        <Point X="4.276" Y="12" />
+        <Point X="4.276" Y="7.089" />
+        <Point X="3.583" Y="7.089" Type="JumpStart" />
+        <Point X="3.417" Y="7.089" Type="JumpEnd" />
+        <Point X="2" Y="7.089" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="CD" Type="DeLettertuin.CD" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="12" />
+        <Point X="4.304" Y="12" />
+        <Point X="4.304" Y="10.279" />
+        <Point X="3.583" Y="10.279" Type="JumpStart" />
+        <Point X="3.417" Y="10.279" Type="JumpEnd" />
+        <Point X="2" Y="10.279" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Boek" Type="DeLettertuin.Boek" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="12" />
+        <Point X="4.276" Y="12" />
+        <Point X="4.276" Y="8.779" />
+        <Point X="3.583" Y="8.779" Type="JumpStart" />
+        <Point X="3.417" Y="8.779" Type="JumpEnd" />
+        <Point X="2" Y="8.779" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Thema" Type="DeLettertuin.Thema" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="12" />
+        <Point X="6.75" Y="11.967" />
+        <Point X="4.267" Y="11.967" />
+        <Point X="4.267" Y="8.376" />
+        <Point X="7.94" Y="8.376" />
+        <Point X="7.94" Y="7.366" />
+        <Point X="8" Y="7.366" />
+        <Point X="8" Y="6.868" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAACBAAAAAAAAAAAAAAAAAAQAAAAgAAAA=</HashCode>
+      <FileName>Verteltas.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Spel" />
+      <Property Name="DVD" />
+      <Property Name="CD" />
+      <Property Name="Boek" />
+      <Property Name="Thema" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DeLettertuin.Spel">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <InheritanceLine Type="DeLettertuin.Item" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="4.618" />
+        <Point X="3.5" Y="6.812" />
+        <Point X="2" Y="6.812" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Spel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Thema" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DeLettertuin.Vrijwilliger">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vrijwilliger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeLettertuin.Medewerker">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Medewerker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
