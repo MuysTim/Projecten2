@@ -11,7 +11,7 @@
     </AssociationLine>
     <TypeIdentifier>
       <HashCode>BBAACAEAAAMBCAIAAgACAIAgAABAAABACAgAJQgIDAA=</HashCode>
-      <FileName>Mediatheek.cs</FileName>
+      <FileName>Models\Domain\Mediatheek.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Gebruikers" />
@@ -25,21 +25,21 @@
     <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAAAQAAAAAAAA=</HashCode>
-      <FileName>Gebruiker.cs</FileName>
+      <FileName>Models\Domain\Gebruiker.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DeLettertuin.Item" Collapsed="true">
     <Position X="2.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAABCAAAAAAAAAACAAAIAAAAAA=</HashCode>
-      <FileName>Item.cs</FileName>
+      <FileName>Models\Domain\Item.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DeLettertuin.Uitlening" Collapsed="true">
     <Position X="5.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAACAAAAAAAAAAAAAAAAAAAEACAAAAAAAgAAAAAAAAA=</HashCode>
-      <FileName>Uitlening.cs</FileName>
+      <FileName>Models\Domain\Uitlening.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Item" />
@@ -49,7 +49,7 @@
     <Position X="8.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAACAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
-      <FileName>Lener.cs</FileName>
+      <FileName>Models\Domain\Lener.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Uitleningen" />
@@ -59,32 +59,34 @@
     <Position X="7.25" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Thema.cs</FileName>
+      <FileName>Models\Domain\Thema.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DeLettertuin.Boek">
+  <Class Name="DeLettertuin.Boek" Collapsed="true">
     <Position X="0.5" Y="8" Width="1.5" />
     <InheritanceLine Type="DeLettertuin.Item" FixedToPoint="true">
       <Path>
         <Point X="3.5" Y="4.312" />
-        <Point X="3.5" Y="8.5" />
-        <Point X="2" Y="8.5" />
+        <Point X="3.5" Y="8.346" />
+        <Point X="2" Y="8.346" />
       </Path>
     </InheritanceLine>
     <AssociationLine Name="Themas" Type="DeLettertuin.Thema" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="2" Y="8.78" />
-        <Point X="3.417" Y="8.78" Type="JumpStart" />
-        <Point X="3.583" Y="8.78" Type="JumpEnd" />
-        <Point X="4.153" Y="8.78" Type="JumpStart" />
-        <Point X="4.329" Y="8.78" Type="JumpEnd" />
-        <Point X="8.312" Y="8.78" />
+        <Point X="2" Y="8.54" />
+        <Point X="3.417" Y="8.54" Type="JumpStart" />
+        <Point X="3.583" Y="8.54" Type="JumpEnd" />
+        <Point X="4.153" Y="8.54" Type="JumpStart" />
+        <Point X="4.329" Y="8.54" Type="JumpEnd" />
+        <Point X="7.635" Y="8.54" Type="JumpStart" />
+        <Point X="7.802" Y="8.54" Type="JumpEnd" />
+        <Point X="8.312" Y="8.54" />
         <Point X="8.312" Y="6.562" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Boek.cs</FileName>
+      <HashCode>AAAABAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Domain\Boek.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Themas" />
@@ -95,24 +97,26 @@
     <InheritanceLine Type="DeLettertuin.Item" FixedToPoint="true">
       <Path>
         <Point X="3.5" Y="4.312" />
-        <Point X="3.5" Y="11.688" />
-        <Point X="2" Y="11.688" />
+        <Point X="3.5" Y="11.791" />
+        <Point X="2" Y="11.791" />
       </Path>
     </InheritanceLine>
     <AssociationLine Name="Themas" Type="DeLettertuin.Thema" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="2" Y="11.469" />
-        <Point X="3.417" Y="11.469" Type="JumpStart" />
-        <Point X="3.583" Y="11.469" Type="JumpEnd" />
-        <Point X="4.153" Y="11.469" Type="JumpStart" />
-        <Point X="4.329" Y="11.469" Type="JumpEnd" />
-        <Point X="8.312" Y="11.469" />
+        <Point X="2" Y="11.52" />
+        <Point X="3.417" Y="11.52" Type="JumpStart" />
+        <Point X="3.583" Y="11.52" Type="JumpEnd" />
+        <Point X="4.153" Y="11.52" Type="JumpStart" />
+        <Point X="4.329" Y="11.52" Type="JumpEnd" />
+        <Point X="7.635" Y="11.52" Type="JumpStart" />
+        <Point X="7.802" Y="11.52" Type="JumpEnd" />
+        <Point X="8.312" Y="11.52" />
         <Point X="8.312" Y="6.562" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DVD.cs</FileName>
+      <FileName>Models\Domain\DVD.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Themas" />
@@ -123,18 +127,20 @@
     <InheritanceLine Type="DeLettertuin.Item" FixedToPoint="true">
       <Path>
         <Point X="3.5" Y="4.312" />
-        <Point X="3.5" Y="10" />
-        <Point X="2" Y="10" />
+        <Point X="3.5" Y="10.118" />
+        <Point X="2" Y="10.118" />
       </Path>
     </InheritanceLine>
     <AssociationLine Name="Themas" Type="DeLettertuin.Thema" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="2" Y="10.28" />
-        <Point X="3.417" Y="10.28" Type="JumpStart" />
-        <Point X="3.583" Y="10.28" Type="JumpEnd" />
-        <Point X="4.153" Y="10.28" Type="JumpStart" />
-        <Point X="4.329" Y="10.28" Type="JumpEnd" />
-        <Point X="8.312" Y="10.28" />
+        <Point X="2" Y="10.464" />
+        <Point X="3.417" Y="10.464" Type="JumpStart" />
+        <Point X="3.583" Y="10.464" Type="JumpEnd" />
+        <Point X="4.153" Y="10.464" Type="JumpStart" />
+        <Point X="4.329" Y="10.464" Type="JumpEnd" />
+        <Point X="7.635" Y="10.464" Type="JumpStart" />
+        <Point X="7.802" Y="10.464" Type="JumpEnd" />
+        <Point X="8.312" Y="10.464" />
         <Point X="8.312" Y="6.562" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
@@ -143,7 +149,7 @@
     </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CD.cs</FileName>
+      <FileName>Models\Domain\CD.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Themas" />
@@ -154,43 +160,43 @@
     <InheritanceLine Type="DeLettertuin.Item" FixedToPoint="true">
       <Path>
         <Point X="3.5" Y="4.312" />
-        <Point X="3.5" Y="12.563" />
-        <Point X="7" Y="12.563" />
+        <Point X="3.5" Y="12.754" />
+        <Point X="7" Y="12.754" />
       </Path>
     </InheritanceLine>
     <AssociationLine Name="Boeken" Type="DeLettertuin.Boek" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="7" Y="12.375" />
-        <Point X="4.236" Y="12.375" />
-        <Point X="4.236" Y="8.219" />
-        <Point X="3.583" Y="8.219" Type="JumpStart" />
-        <Point X="3.417" Y="8.219" Type="JumpEnd" />
-        <Point X="2" Y="8.219" />
+        <Point X="7" Y="12.523" />
+        <Point X="4.236" Y="12.523" />
+        <Point X="4.236" Y="8.152" />
+        <Point X="3.583" Y="8.152" Type="JumpStart" />
+        <Point X="3.417" Y="8.152" Type="JumpEnd" />
+        <Point X="2" Y="8.152" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="CDs" Type="DeLettertuin.CD" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="7" Y="12.375" />
-        <Point X="4.241" Y="12.375" />
-        <Point X="4.241" Y="9.719" />
-        <Point X="3.583" Y="9.719" Type="JumpStart" />
-        <Point X="3.417" Y="9.719" Type="JumpEnd" />
-        <Point X="2" Y="9.719" />
+        <Point X="7" Y="12.523" />
+        <Point X="4.241" Y="12.523" />
+        <Point X="4.241" Y="9.77" />
+        <Point X="3.583" Y="9.77" Type="JumpStart" />
+        <Point X="3.417" Y="9.77" Type="JumpEnd" />
+        <Point X="2" Y="9.77" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="Spellen" Type="DeLettertuin.Spel" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="7" Y="12.375" />
-        <Point X="4.246" Y="12.375" />
-        <Point X="4.246" Y="7.061" />
-        <Point X="3.583" Y="7.061" Type="JumpStart" />
-        <Point X="3.417" Y="7.061" Type="JumpEnd" />
-        <Point X="2" Y="7.061" />
+        <Point X="7" Y="12.523" />
+        <Point X="4.246" Y="12.523" />
+        <Point X="4.246" Y="7.252" />
+        <Point X="3.583" Y="7.252" Type="JumpStart" />
+        <Point X="3.417" Y="7.252" Type="JumpEnd" />
+        <Point X="2" Y="7.252" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAACIAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Verteltas.cs</FileName>
+      <FileName>Models\Domain\Verteltas.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Boeken" />
@@ -205,13 +211,13 @@
     <InheritanceLine Type="DeLettertuin.Item" FixedToPoint="true">
       <Path>
         <Point X="3.5" Y="4.312" />
-        <Point X="3.5" Y="6.812" />
-        <Point X="2" Y="6.812" />
+        <Point X="3.5" Y="6.945" />
+        <Point X="2" Y="6.945" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Spel.cs</FileName>
+      <FileName>Models\Domain\Spel.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Themas" />
@@ -221,14 +227,14 @@
     <Position X="10.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAgAAAAEAAAAAA=</HashCode>
-      <FileName>Vrijwilliger.cs</FileName>
+      <FileName>Models\Domain\Vrijwilliger.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DeLettertuin.Medewerker" Collapsed="true">
     <Position X="13.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Medewerker.cs</FileName>
+      <FileName>Models\Domain\Medewerker.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
