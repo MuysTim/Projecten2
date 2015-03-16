@@ -25,7 +25,7 @@ namespace DeLettertuin
 
         public ICollection<Item> Items { get; set; }
 
-        public ICollection<Uitlening> Uitleningen { get; set; }
+        public static ICollection<Uitlening> Uitleningen { get; set; }
 
         public ICollection<Lener> Leners { get; set; }
 
@@ -118,15 +118,19 @@ namespace DeLettertuin
             throw new System.NotImplementedException();
         }
 
-        public void UitleningToevoegen(Lener l, Item i, DateTime tot)
+        public static void UitleningToevoegen(Lener l, DateTime tot, Item i)
         {
             if(!KanUitlenen(l))
                 throw new ApplicationException("Lener heeft al 3 uitleningen");
             Uitlening nieuweUitlening = new Uitlening(i,tot);
+            if (Uitleningen.Contains(nieuweUitlening))
+                throw new ApplicationException("Uitlening bestaat al");
+
+            Uitleningen.Add(nieuweUitlening);
 
         }
 
-        public bool KanUitlenen(Lener l)
+        public static bool KanUitlenen(Lener l)
         {
             if (l.Uitleningen.Count >= 3) throw new ApplicationException("Lener heeft al 3 uitleningen");
                 return false;
