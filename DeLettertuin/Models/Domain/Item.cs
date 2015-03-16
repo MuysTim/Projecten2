@@ -8,14 +8,20 @@ namespace DeLettertuin
 {
     public class Item
     {
+        protected Item()
+        {
+
+        }
+
         protected Item(int id, string naam, bool inMediatheek, string omschrijving)
         {
             Id = id;
             Naam = naam;
             InMediatheek = inMediatheek;
             Omschrijving = omschrijving;
-
         }
+
+
 
         public bool InMediatheek { get; set; }
 

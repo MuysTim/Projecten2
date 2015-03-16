@@ -10,15 +10,15 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>BBAACAEAAAMBCAIAAgACAIAgAABAAABACAgAJQgIDAA=</HashCode>
+      <HashCode>BBAACAEAAAMBCAIAAgACAIAgAQBAAABACAgAJQgIDAA=</HashCode>
       <FileName>Models\Domain\Mediatheek.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Gebruikers" />
       <Property Name="Items" />
+      <Property Name="Uitleningen" />
       <Property Name="Leners" />
       <Property Name="Themas" />
-      <Property Name="Uitleningen" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="DeLettertuin.Gebruiker" Collapsed="true">
@@ -164,14 +164,14 @@
         <Point X="7" Y="12.754" />
       </Path>
     </InheritanceLine>
-    <AssociationLine Name="Boeken" Type="DeLettertuin.Boek" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="Spellen" Type="DeLettertuin.Spel" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="7" Y="12.523" />
-        <Point X="4.236" Y="12.523" />
-        <Point X="4.236" Y="8.152" />
-        <Point X="3.583" Y="8.152" Type="JumpStart" />
-        <Point X="3.417" Y="8.152" Type="JumpEnd" />
-        <Point X="2" Y="8.152" />
+        <Point X="4.246" Y="12.523" />
+        <Point X="4.246" Y="7.252" />
+        <Point X="3.583" Y="7.252" Type="JumpStart" />
+        <Point X="3.417" Y="7.252" Type="JumpEnd" />
+        <Point X="2" Y="7.252" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="CDs" Type="DeLettertuin.CD" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
@@ -184,14 +184,14 @@
         <Point X="2" Y="9.77" />
       </Path>
     </AssociationLine>
-    <AssociationLine Name="Spellen" Type="DeLettertuin.Spel" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="Boeken" Type="DeLettertuin.Boek" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="7" Y="12.523" />
-        <Point X="4.246" Y="12.523" />
-        <Point X="4.246" Y="7.252" />
-        <Point X="3.583" Y="7.252" Type="JumpStart" />
-        <Point X="3.417" Y="7.252" Type="JumpEnd" />
-        <Point X="2" Y="7.252" />
+        <Point X="4.236" Y="12.523" />
+        <Point X="4.236" Y="8.152" />
+        <Point X="3.583" Y="8.152" Type="JumpStart" />
+        <Point X="3.417" Y="8.152" Type="JumpEnd" />
+        <Point X="2" Y="8.152" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -199,10 +199,10 @@
       <FileName>Models\Domain\Verteltas.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
-      <Property Name="Boeken" />
-      <Property Name="CDs" />
-      <Property Name="DVDs" />
       <Property Name="Spellen" />
+      <Property Name="DVDs" />
+      <Property Name="CDs" />
+      <Property Name="Boeken" />
       <Property Name="Themas" />
     </ShowAsCollectionAssociation>
   </Class>

@@ -12,7 +12,13 @@ namespace DeLettertuin
     {
         public Mediatheek()
         {
-            throw new System.NotImplementedException();
+            Gebruikers = new List<Gebruiker>();
+            Items = new List<Item>();
+            Uitleningen = new List<Uitlening>();
+            Leners = new List<Lener>();
+            Themas = new List<Thema>();
+
+
         }
 
         public ICollection<Gebruiker> Gebruikers { get; set; }
@@ -21,7 +27,7 @@ namespace DeLettertuin
 
         public ICollection<Uitlening> Uitleningen { get; set; }
 
-        public ICollection<DeLettertuin.Lener> Leners { get; set; }
+        public ICollection<Lener> Leners { get; set; }
 
         public ICollection<Thema> Themas { get; set; }
 
@@ -112,9 +118,19 @@ namespace DeLettertuin
             throw new System.NotImplementedException();
         }
 
-        public void UitleningToevoegen()
+        public void UitleningToevoegen(Lener l, Item i, DateTime tot)
         {
-            throw new System.NotImplementedException();
+            if(!KanUitlenen(l))
+                throw new ApplicationException("Lener heeft al 3 uitleningen");
+            Uitlening nieuweUitlening = new Uitlening(i,tot);
+
+        }
+
+        public bool KanUitlenen(Lener l)
+        {
+            if (l.Uitleningen.Count >= 3) throw new ApplicationException("Lener heeft al 3 uitleningen");
+                return false;
+
         }
     }
 }

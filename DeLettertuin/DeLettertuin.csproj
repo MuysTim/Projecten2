@@ -148,6 +148,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\UitleningController.cs" />
+    <Compile Include="Models\DAL\DeLettertuinContext.cs" />
     <Compile Include="Models\DAL\UitleningRepository.cs" />
     <Compile Include="Models\Domain\Boek.cs" />
     <Compile Include="Models\Domain\CD.cs" />
@@ -156,7 +158,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Domain\IItem.cs" />
     <Compile Include="Models\Domain\Item.cs" />
+    <Compile Include="Models\Domain\IUitleningRepository.cs" />
     <Compile Include="Models\Domain\Lener.cs" />
     <Compile Include="Models\Domain\Medewerker.cs" />
     <Compile Include="Models\Domain\Mediatheek.cs" />
@@ -179,7 +183,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
