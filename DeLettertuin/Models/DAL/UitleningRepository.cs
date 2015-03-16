@@ -20,5 +20,25 @@ namespace DeLettertuin.Models.DAL
         {
             return Uitleningen.Find(itemId);
         }
+
+        public IQueryable<Uitlening> FindAll()
+        {
+            return Uitleningen;
+        }
+
+        public void Add(Uitlening uitlening)
+        {
+            Uitleningen.Add(uitlening);
+        }
+
+        public void Delete(Uitlening uitlening)
+        {
+            Uitleningen.Remove(uitlening);
+        }
+
+        public void SaveChanges()
+        {
+            Context.SaveChanges();
+        }
     }
 }

@@ -150,6 +150,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\UitleningController.cs" />
     <Compile Include="Models\DAL\DeLettertuinContext.cs" />
+    <Compile Include="Models\DAL\ItemRepository.cs" />
+    <Compile Include="Models\DAL\LenerRepository.cs" />
     <Compile Include="Models\DAL\UitleningRepository.cs" />
     <Compile Include="Models\Domain\Boek.cs" />
     <Compile Include="Models\Domain\CD.cs" />
@@ -159,8 +161,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Domain\IItem.cs" />
+    <Compile Include="Models\Domain\IItemRepository.cs" />
+    <Compile Include="Models\Domain\ILenerRepository.cs" />
     <Compile Include="Models\Domain\Item.cs" />
-    <Compile Include="Models\Domain\IUitleningRepository.cs" />
+    <Compile Include="Models\Domain\IUitleningenRepository.cs" />
     <Compile Include="Models\Domain\Lener.cs" />
     <Compile Include="Models\Domain\Medewerker.cs" />
     <Compile Include="Models\Domain\Mediatheek.cs" />

@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Web;
-using System.Web.Services;
-using System.Web.Services.Protocols;
-using System.ComponentModel;
+using System.Collections;
 
 namespace DeLettertuin
 {
@@ -15,9 +12,9 @@ namespace DeLettertuin
             throw new System.NotImplementedException();
         }
 
-        public ICollection Zoek()
+        public ICollection Zoek(String zoek)
         {
-            throw new System.NotImplementedException();
+            return null;
         }
     }
 }
