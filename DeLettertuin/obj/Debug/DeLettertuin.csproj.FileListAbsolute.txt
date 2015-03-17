@@ -1,0 +1,6 @@
+C:\Users\Dennis\Source\Repos\Projecten2\DeLettertuin\obj\Debug\DeLettertuin.csprojResolveAssemblyReference.cache
+C:\Users\Dennis\Source\Repos\Projecten2\DeLettertuin\bin\DeLettertuin.dll.config
+C:\Users\Dennis\Source\Repos\Projecten2\DeLettertuin\bin\DeLettertuin.dll
+C:\Users\Dennis\Source\Repos\Projecten2\DeLettertuin\bin\DeLettertuin.pdb
+C:\Users\Dennis\Source\Repos\Projecten2\DeLettertuin\obj\Debug\DeLettertuin.dll
+C:\Users\Dennis\Source\Repos\Projecten2\DeLettertuin\obj\Debug\DeLettertuin.pdb

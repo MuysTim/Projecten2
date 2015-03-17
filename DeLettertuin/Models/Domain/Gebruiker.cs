@@ -15,9 +15,9 @@ namespace DeLettertuin
             throw new System.NotImplementedException();
         }
 
-        public ICollection Zoek()
+       /* public ICollection Zoek()
         {
             throw new System.NotImplementedException();
-        }
+        } */
     }
 }
