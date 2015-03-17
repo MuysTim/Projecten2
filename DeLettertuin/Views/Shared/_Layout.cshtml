@@ -1,87 +1,23 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title</title>
+        <link href="~/Content/Site.css" rel="stylesheet" />
 
-</head>
+    </head>
     <body>
-        @*<header id="section-header" class="section section-header">
-            <div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">
-                <div id="zone-branding" class="zone zone-branding clearfix container-12">
-                    <div class="grid-12 region region-branding" id="region-branding">
-                        <div class="region-inner region-branding-inner">
-                            <div class="branding-data clearfix">
-                                <div class="logo-img">
-                                    <a href="./Home   Vrije Basisschool de Krekel_files/Home   Vrije Basisschool de Krekel.html" rel="home" title="Vrije Basisschool de Krekel" class="active"><img src="./Home   Vrije Basisschool de Krekel_files/lgo_krekelNew.png" alt="Vrije Basisschool de Krekel" id="logo"></a>
-                                </div>
-                                <hgroup class="site-name-slogan">
+        <div class="branding">
+                <div class="logo">
+            <a href="/" rel="home" title="Vrije Basisschool de Krekel">
+                <img src="/Images/lgo_krekelNew.png" alt="Vrije Basisschool de Krekel" class="btnImg">
+            </a>
+                    <h2 class="AppTitel">De Lettertuin</h2>
+            </div>           
 
-                                    <h1 class="site-name"><a href="./Home   Vrije Basisschool de Krekel_files/Home   Vrije Basisschool de Krekel.html" title="Home" class="active">Vrije Basisschool de Krekel</a></h1>
-                                </hgroup>
-                            </div>
-                            <div class="block block-search block-form block-search-form odd block-without-title" id="block-search-form">
-                                <div class="block-inner clearfix">
+        </div>
 
-                                    <div class="content clearfix">
-                                        <form action="./Home   Vrije Basisschool de Krekel_files/Home   Vrije Basisschool de Krekel.html" method="post" id="search-block-form" accept-charset="UTF-8">
-                                            <div>
-                                                <div class="container-inline">
-                                                    <h2 class="element-invisible">Zoekveld</h2>
-                                                    <div class="form-item form-type-textfield form-item-search-block-form">
-                                                        <label class="element-invisible" for="edit-search-block-form--2">Zoeken </label>
-                                                        <input title="Geef de woorden op waarnaar u wilt zoeken." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text">
-                                                    </div>
-                                                    <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Zoeken" class="form-submit"></div><input type="hidden" name="form_build_id" value="form-ZSCw-FeHoPLOM57UBq2BPzFHB8BNfD3KfIx4SdlOXj4">
-                                                    <input type="hidden" name="form_id" value="search_block_form">
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div><div class="block block-menu block-menu-top-menu block-menu-menu-top-menu even block-without-title" id="block-menu-menu-top-menu">
-                                <div class="block-inner clearfix">
-
-                                    <div class="content clearfix">
-                                        <ul class="menu">
-                                            <li class="first leaf"><a href="http://www.vbsdekrekel.be/onze-school/contact" title="">Contact</a></li>
-                                            <li class="leaf"><a href="http://www.bingel.be/" title="" class="ext" target="_blank">Bingel</a><span class="ext"></span></li>
-                                            <li class="leaf"><a href="http://www.google.com/a/victos.be" title="" class="ext" target="_blank">Victos</a><span class="ext"></span></li>
-                                            <li class="last leaf"><a href="http://www.vbsdekrekel.be/de-krekelvrienden">de Krekelvrienden</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">
-                <div id="zone-menu" class="zone zone-menu clearfix container-12">
-                    <div class="grid-12 region region-menu" id="region-menu">
-                        <div class="region-inner region-menu-inner">
-                            <div class="block block-menu-block block-1 block-menu-block-1 odd block-without-title" id="block-menu-block-1">
-                                <div class="block-inner clearfix">
-
-                                    <div class="content clearfix">
-                                        <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-1">
-                                            <ul class="menu">
-                                                <li class="first leaf has-children menu-mlid-740"><a href="http://www.vbsdekrekel.be/welkom-op-onze-vrije-basisschool-de-krekel" title="">Onze school</a></li>
-                                                <li class="leaf has-children menu-mlid-2227"><a href="http://www.vbsdekrekel.be/klassen">Klassen</a></li>
-                                                <li class="leaf menu-mlid-2580"><a href="http://www.vbsdekrekel.be/leerlingenraad">Leerlingenraad</a></li>
-                                                <li class="leaf has-children menu-mlid-2228"><a href="http://www.vbsdekrekel.be/ouderraad" title="Ouderraad">Ouderraad</a></li>
-                                                <li class="leaf menu-mlid-2229"><a href="http://www.vbsdekrekel.be/agenda">Agenda</a></li>
-                                                <li class="last leaf menu-mlid-3648"><a href="http://www.vbsdekrekel.be/menu">Menu</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>*@    
     </body>
+    @RenderBody();  
 </html>
