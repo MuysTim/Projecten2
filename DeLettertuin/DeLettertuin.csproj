@@ -192,6 +192,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ItemController.cs" />
     <Compile Include="Controllers\LeerlingController.cs" />
     <Compile Include="Controllers\UitleningController.cs" />
     <Compile Include="Models\DAL\DeLettertuinContext.cs" />
@@ -236,6 +237,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Views\Item\" />
     <Folder Include="Views\Leerling\" />
   </ItemGroup>
   <PropertyGroup>
