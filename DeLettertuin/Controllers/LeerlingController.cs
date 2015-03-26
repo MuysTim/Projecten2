@@ -11,41 +11,36 @@ namespace DeLettertuin.Controllers
 {
     public class LeerlingController : Controller
     {
-        private ILenerRepository repos;
+        private ILeerlingRepository repos;
 
         public LeerlingController(DeLettertuinContext context)
         {
-            repos = new LenerRepository(context);
+            repos = new LeerlingRepository(context);
         }
         
-        public Collection<Lener> Leners { get; set; }
+        public Collection<Leerling> Leerlingen { get; set; }
 
-        public void EditLener(Lener lener)
+        public void RemoveLeerling(Leerling leerling)
         {
-
+            repos.Delete(leerling);
         }
 
-        public void RemoveLener(Lener lener)
-        {
-            repos.Delete(lener);
-        }
-
-        public Uitlening GetLener()
+        public Uitlening GetLeerling()
         {
             throw new System.NotImplementedException();
         }
 
-        public Collection<Lener> GetLeners()
+        public Collection<Leerling> GetLeerlingen()
         {
             throw new System.NotImplementedException();
         }
 
-        public void AddLener(Lener leerling, DateTime tot, Item item)
+        public void AddLeerling(Leerling leerling, DateTime tot, Item item)
         {
             throw new System.NotImplementedException();
         }
 
-        public Lener GeefLeningAanLener(Lener lener, Uitlening uitlening)
+        public Leerling GeefLeningAanLeerling(Leerling leerling, Uitlening uitlening)
         {
             throw new System.NotImplementedException();
         }

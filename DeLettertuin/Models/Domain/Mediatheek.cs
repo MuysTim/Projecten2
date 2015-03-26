@@ -15,7 +15,7 @@ namespace DeLettertuin
             Gebruikers = new List<Gebruiker>();
             Items = new List<Item>();
             Uitleningen = new List<Uitlening>();
-            Leners = new List<Lener>();
+            Leerlingen = new List<Leerling>();
             Themas = new List<Thema>();
 
 
@@ -27,7 +27,7 @@ namespace DeLettertuin
 
         public static ICollection<Uitlening> Uitleningen { get; set; }
 
-        public ICollection<Lener> Leners { get; set; }
+        public ICollection<Leerling> Leerlingen { get; set; }
 
         public ICollection<Thema> Themas { get; set; }
 
@@ -118,10 +118,10 @@ namespace DeLettertuin
             throw new System.NotImplementedException();
         }
 
-        public static void UitleningToevoegen(Lener l, DateTime tot, Item i)
+        public static void UitleningToevoegen(Leerling l, DateTime tot, Item i)
         {
             if(!KanUitlenen(l))
-                throw new ApplicationException("Lener heeft al 3 uitleningen");
+                throw new ApplicationException("Leerling heeft al 3 uitleningen");
             Uitlening nieuweUitlening = new Uitlening(i,tot);
             if (Uitleningen.Contains(nieuweUitlening))
                 throw new ApplicationException("Uitlening bestaat al");
@@ -130,7 +130,7 @@ namespace DeLettertuin
 
         }
 
-        public static bool KanUitlenen(Lener l)
+        public static bool KanUitlenen(Leerling l)
         {
             if (l.Uitleningen.Count >= 3) throw new ApplicationException("Lener heeft al 3 uitleningen");
                 return false;

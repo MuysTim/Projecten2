@@ -9,10 +9,18 @@ namespace DeLettertuin
 {
     public class Spel : Item
     {
-        public Spel(int id, string naam, bool inMediatheek, string omschrijving)
+        public string Naam { get; set; }
+        public string Uitgeverij { get; set; }
+        public int Leeftijd { get; set; }
+        public string Info { get; set; }
+
+        public Spel(int id, string naam,string uitgeverij,int leeftijd,string info, bool inMediatheek, string omschrijving)
             : base(id, naam, inMediatheek, omschrijving)
         {
-            
+            Naam = naam;
+            Leeftijd = leeftijd;
+            Info = info;
+
         }
 
         public ICollection<Thema> Themas { get; set; }

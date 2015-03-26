@@ -171,6 +171,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Images\KrekelBackground.jpg" />
+    <Content Include="Images\lgo_krekelNew.png" />
     <Content Include="obj\Debug\DeLettertuin.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\DeLettertuin.dll" />
     <Content Include="obj\Debug\DeLettertuin.pdb" />
@@ -198,7 +200,13 @@
     <Compile Include="Controllers\UitleningController.cs" />
     <Compile Include="Models\DAL\DeLettertuinContext.cs" />
     <Compile Include="Models\DAL\ItemRepository.cs" />
-    <Compile Include="Models\DAL\LenerRepository.cs" />
+    <Compile Include="Models\DAL\LeerlingRepository.cs" />
+    <Compile Include="Models\DAL\Mapper\BoekenMapper.cs" />
+    <Compile Include="Models\DAL\Mapper\CdsMapper.cs" />
+    <Compile Include="Models\DAL\Mapper\DvdsMapper.cs" />
+    <Compile Include="Models\DAL\Mapper\ItemMapper.cs" />
+    <Compile Include="Models\DAL\Mapper\LeerlingMapper.cs" />
+    <Compile Include="Models\DAL\Mapper\SpellenMapper.cs" />
     <Compile Include="Models\DAL\UitleningRepository.cs" />
     <Compile Include="Models\Domain\Boek.cs" />
     <Compile Include="Models\Domain\CD.cs" />
@@ -209,10 +217,10 @@
     </Compile>
     <Compile Include="Models\Domain\IItem.cs" />
     <Compile Include="Models\Domain\IItemRepository.cs" />
-    <Compile Include="Models\Domain\ILenerRepository.cs" />
+    <Compile Include="Models\Domain\ILeerlingRepository.cs" />
     <Compile Include="Models\Domain\Item.cs" />
     <Compile Include="Models\Domain\IUitleningenRepository.cs" />
-    <Compile Include="Models\Domain\Lener.cs" />
+    <Compile Include="Models\Domain\Leerling.cs" />
     <Compile Include="Models\Domain\Medewerker.cs" />
     <Compile Include="Models\Domain\Mediatheek.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
