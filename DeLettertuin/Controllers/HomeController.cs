@@ -13,7 +13,7 @@ namespace DeLettertuin.Controllers
 
         public ActionResult Index()
         {
-            throw new System.NotImplementedException();
+            return View();
         }
 
         public ActionResult About()
