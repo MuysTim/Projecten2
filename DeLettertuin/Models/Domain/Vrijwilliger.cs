@@ -8,7 +8,7 @@ namespace DeLettertuin
 {
     public class Vrijwilliger : Gebruiker
     {
-        public void Uitlenen(Lener l, DateTime tot, Item i)
+        public void Uitlenen(Leerling l, DateTime tot, Item i)
         {
             Mediatheek.UitleningToevoegen(l, tot, i);
         }

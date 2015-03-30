@@ -45,7 +45,7 @@ namespace DeLettertuin.Controllers
             throw new System.NotImplementedException();
         }
 
-        public void AddUitlening(Lener leerling, DateTime tot, Item item)
+        public void AddUitlening(Leerling leerling, DateTime tot, Item item)
         {
             throw new System.NotImplementedException();
         }

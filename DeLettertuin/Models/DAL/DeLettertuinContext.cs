@@ -17,7 +17,7 @@ namespace DeLettertuin.Models.DAL
         public virtual DbSet<Item> Items { get; set; }
         public virtual DbSet<Boek> Boeken { get; set; }
 
-        public virtual DbSet<Lener> Leners { get; set; }
+        public virtual DbSet<Leerling> Leerlingen { get; set; }
         public virtual DbSet<Uitlening> Uitleningen { get; set; }
         public virtual DbSet<Thema> Themas { get; set; }
 
