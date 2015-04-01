@@ -18,12 +18,12 @@ namespace DeLettertuin.Controllers
 
         public ActionResult About()
         {
-            throw new System.NotImplementedException();
+            return View();
         }
 
         public ActionResult Contact()
         {
-            throw new System.NotImplementedException();
+            return View();
         }
 
 

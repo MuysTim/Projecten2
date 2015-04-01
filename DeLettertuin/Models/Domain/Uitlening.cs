@@ -8,6 +8,12 @@ namespace DeLettertuin
 {
     public class Uitlening
     {
+
+        public Uitlening()
+        {
+
+        }
+
         public Uitlening(int id, bool isTerugInMediatheek, DateTime van, DateTime tot, Item item)
         {
             Id = id;
@@ -16,6 +22,8 @@ namespace DeLettertuin
             EindDatum = tot;
             Item = item;
         }
+
+
 
         public Uitlening (Item i, DateTime tot)
         {
