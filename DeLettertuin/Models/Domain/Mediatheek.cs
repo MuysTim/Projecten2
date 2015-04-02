@@ -21,17 +21,39 @@ namespace DeLettertuin
 
         }
 
-        public ICollection<Gebruiker> Gebruikers { get; set; }
+        public ICollection<Gebruiker> Gebruikers
+        {
+            get { return Gebruikers; }
+            set {}
+        }
 
-        public ICollection<Item> Items { get; set; }
+        public ICollection<Item> Items
+        {
+            get { return Items; }
+            set {}
+        }
 
-        public static ICollection<Uitlening> Uitleningen { get; set; }
+        public static ICollection<Uitlening> Uitleningen { 
+            get { return Uitleningen; }
+            set {} }
 
-        public ICollection<Leerling> Leerlingen { get; set; }
+        public ICollection<Leerling> Leerlingen
+        {
+            get { return Leerlingen; }
+            set {}
+        }
 
-        public ICollection<Thema> Themas { get; set; }
+        public ICollection<Thema> Themas
+        {
+            get { return Themas; }
+            set {}
+        }
 
-        public UitleningRepository UitleningRepository { get; set; }
+        public UitleningRepository UitleningRepository
+        {
+            get { return UitleningRepository; }
+            set {}
+        }
 
         public void ThemaAanpassen()
         {

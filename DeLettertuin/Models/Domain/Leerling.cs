@@ -26,9 +26,14 @@ namespace DeLettertuin
 
         public ICollection<Uitlening> Uitleningen { get; set; }
 
-        public int Id { get; set; }
+        public int Id {
+            get { return Id; }
+            set {}
+        }
 
-        public string Naam { get; set; }
+        public string Naam { 
+            get { return Naam; }
+            set {} }
 
         public void LeenUit()
         {

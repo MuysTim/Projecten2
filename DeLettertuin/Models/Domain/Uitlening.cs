@@ -27,10 +27,7 @@ namespace DeLettertuin
 
         public Item Item
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+            get { return Item; }
             set
             {
             }
@@ -38,46 +35,27 @@ namespace DeLettertuin
 
         public bool IsTerugInMediatheek
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get { return IsTerugInMediatheek; }
+            set { }
         }
 
         public DateTime StartDatum
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get { return StartDatum; }
+            private set { StartDatum = value.Date; }
+
         }
 
         public DateTime EindDatum
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get { return EindDatum; }
+            private set { EindDatum = value.Date; }
         }
 
         public int Id
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get { return Id; }
+            set { }
         }
     }
 }

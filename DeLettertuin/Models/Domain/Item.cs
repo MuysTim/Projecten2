@@ -31,7 +31,7 @@ namespace DeLettertuin
 
         public int Id { get; set; }
 
-        public void IsUitgeleend()
+        public bool IsUitgeleend()
         {
             throw new System.NotImplementedException();
         }

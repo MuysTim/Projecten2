@@ -13,6 +13,11 @@ namespace DeLettertuin.Models.DAL
         private DbSet Items;
         private string ItemSoort;
 
+        public ItemRepository(DeLettertuinContext context)
+        {
+            Context = context;
+        }
+
         public ItemRepository(DeLettertuinContext context, String itemSoort)
         {
             Context = context;
