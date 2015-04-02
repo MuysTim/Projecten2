@@ -14,7 +14,7 @@ namespace DeLettertuin.Models.DAL.Mapper
             Property(b => b.Titel).IsRequired();
             Property(b => b.Auteur).IsOptional();
             Property(b => b.Uitgeverij).IsOptional();
-            Property(b => b.Korte_Indhoud).IsOptional();
+            Property(b => b.Korte_Inhoud).IsOptional();
             Property(b => b.Leeftijd).IsOptional();
 
         }

@@ -55,6 +55,7 @@ namespace DeLettertuin
             }
         }
 
+        [DisplayName("Van")]
         public DateTime StartDatum
         {
             get
@@ -65,7 +66,8 @@ namespace DeLettertuin
             {
             }
         }
-
+        
+        [DisplayName("Tot")]
         public DateTime EindDatum
         {
             get

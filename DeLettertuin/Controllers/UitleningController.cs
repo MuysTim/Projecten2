@@ -11,15 +11,21 @@ namespace DeLettertuin.Controllers
 {
     public class UitleningController : Controller
     {
+        public List<Uitlening> UitleningenList = new List<Uitlening>(); 
         private IUitleningenRepository repos;
+
+        public UitleningController() { }
+        public ActionResult UitleningenView()
+        {
+            var model = GetUitleningen();
+            return View(model);
+        }
 
         public UitleningController(DeLettertuinContext context)
         {
             repos = new UitleningRepository(context);
         }
         
-        public Collection<Uitlening> Uitleningen { get; set; }
-
         public void EditUitlening(Uitlening uitlening)
         {
 
@@ -35,9 +41,9 @@ namespace DeLettertuin.Controllers
             throw new System.NotImplementedException();
         }
 
-        public Collection<Uitlening> GetUitleningen()
+        public List<Uitlening> GetUitleningen()
         {
-            throw new System.NotImplementedException();
+            return UitleningenList;
         }
 
         public void CheckOutUitlening(Uitlening uitlening)
@@ -45,9 +51,10 @@ namespace DeLettertuin.Controllers
             throw new System.NotImplementedException();
         }
 
-        public void AddUitlening(Leerling leerling, DateTime tot, Item item)
+        public void AddUitlening(Uitlening uitlening)
         {
-            throw new System.NotImplementedException();
+            repos.Add(uitlening);
+            repos.SaveChanges();
         }
     }
 }

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<DeLettertuin.Uitlening>
+
+@{
+    ViewBag.Title = "Uitleningen";
+}
+
+<div class="container">
+<h2>Uitleningen</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StartDatum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EindDatum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Item)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var uitlening in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modeluitlening => uitlening.StartDatum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelUitlening => uitlening.EindDatum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelUitlening => uitlening.Item)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=uitlening.Id }) |
+                @Html.ActionLink("Details", "Details", new { id=uitlening.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id=uitlening.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+</div>

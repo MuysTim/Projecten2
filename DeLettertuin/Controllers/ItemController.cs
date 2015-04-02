@@ -13,11 +13,6 @@ namespace DeLettertuin.Controllers
     {
         private IItemRepository repos;
 
-        public ItemController()
-        {
-
-        }
-        
         public Collection<Item> Items { get; set; }
 
         public void EditItem(Item item)
@@ -37,7 +32,7 @@ namespace DeLettertuin.Controllers
 
         public Collection<Item> GetItems()
         {
-            throw new System.NotImplementedException();
+            return Items;
         }
 
         public void AddItem(string naam, bool inMediatheek, string omschrijving)

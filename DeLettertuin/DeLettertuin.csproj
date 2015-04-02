@@ -385,7 +385,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Uitlening\RemoveUitlening.cshtml" />
     <Content Include="Views\Uitlening\GetUitlening.cshtml" />
-    <Content Include="Views\Uitlening\GetUitleningen.cshtml" />
+    <Content Include="Views\Uitlening\UitleningenView.cshtml" />
     <Content Include="Views\Uitlening\AddUitlening.cshtml" />
     <Content Include="Views\Uitlening\EditUitlening.cshtml" />
     <None Include="Web.Debug.config">
