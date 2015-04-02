@@ -37,10 +37,17 @@ h2 {
 }
 
 .navibar{
-    color: white;
-    background-color:#ABCE14;
+    background-color:#8AC619;
     font-size: large;
     font-family: 'Grand hotel';
+}
+
+tr:nth-child(odd) {
+    background-color: #FFF;
+}
+
+tr:nth-child(even) {
+    background-color: #000000;
 }
 
 a {
@@ -62,6 +69,13 @@ footer {
     text-align: center;
 }
 
+.kader {
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 25px;
+    background-color: #8AC619;
+
+}
 
 
 .btnImg{

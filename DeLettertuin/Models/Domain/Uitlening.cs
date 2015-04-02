@@ -33,61 +33,17 @@ namespace DeLettertuin
             IsTerugInMediatheek = false;
         }
 
-        public Item Item
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public Leerling Leerling { get; set; }
+        public Item Item { get; set; }
 
-        public bool IsTerugInMediatheek
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public bool IsTerugInMediatheek { get; set; }
 
         [DisplayName("Van")]
-        public DateTime StartDatum
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public DateTime StartDatum { get; set; }
         
         [DisplayName("Tot")]
-        public DateTime EindDatum
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public DateTime EindDatum { get; set; }
 
-        public int Id
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public int Id { get; set; }
     }
 }

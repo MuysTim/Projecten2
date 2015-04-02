@@ -11,7 +11,13 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
-    <tr>
+    <tr style="background-color: #ABCE14">
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Leerling)
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.StartDatum)
         </th>
@@ -26,6 +32,12 @@
 
     @foreach (var uitlening in Model) {
         <tr>
+            <td>
+                @Html.DisplayFor(modeluitlening => uitlening.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modeluitlening => uitlening.Leerling)
+            </td>
             <td>
                 @Html.DisplayFor(modeluitlening => uitlening.StartDatum)
             </td>
