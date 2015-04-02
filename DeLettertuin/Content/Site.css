@@ -38,12 +38,16 @@ h2 {
 
 .navibar{
     background-color:#8AC619;
-    font-size: large;
+    font-size: x-large;
     font-family: 'Grand hotel';
 }
 
+.navibar:hover {
+    color:#000000
+}
+
 tr:nth-child(odd) {
-    background-color: #FFF;
+    background-color: #fff;
 }
 
 tr:nth-child(even) {
@@ -77,6 +81,11 @@ footer {
 
 }
 
+.navBtnImg{
+    margin-left: 10%;
+    width: 44px;
+    float:left;
+}
 
 .btnImg{
     padding-left:5px;
