@@ -89,3 +89,6 @@ C:\Users\Dennis\Source\Repos\Projecten2\DeLettertuin\obj\Debug\DeLettertuin.pdb
 C:\Users\Dennis\Source\Repos\Projecten2\DeLettertuin\bin\System.Web.Optimization.dll
 C:\Users\Dennis\Source\Repos\Projecten2\DeLettertuin\bin\WebGrease.dll
 C:\Users\Dennis\Source\Repos\Projecten2\DeLettertuin\bin\System.Web.Optimization.xml
+C:\Users\Tim\Source\Repos\Projecten2\DeLettertuin\bin\System.Web.Optimization.dll
+C:\Users\Tim\Source\Repos\Projecten2\DeLettertuin\bin\WebGrease.dll
+C:\Users\Tim\Source\Repos\Projecten2\DeLettertuin\bin\System.Web.Optimization.xml
