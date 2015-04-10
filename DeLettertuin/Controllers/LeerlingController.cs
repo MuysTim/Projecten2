@@ -11,7 +11,16 @@ namespace DeLettertuin.Controllers
 {
     public class LeerlingController : Controller
     {
+        public List<Leerling> LeerlingenList = new List<Leerling>(); 
         private ILeerlingRepository repos;
+
+        public LeerlingController() { }
+
+        public ActionResult LeerlingenView()
+        {
+            var model = GetLeerlingen();
+            return View(model);
+        }
 
         public LeerlingController(DeLettertuinContext context)
         {
@@ -30,9 +39,10 @@ namespace DeLettertuin.Controllers
             throw new System.NotImplementedException();
         }
 
-        public Collection<Leerling> GetLeerlingen()
+        public List<Leerling> GetLeerlingen()
         {
-            throw new System.NotImplementedException();
+            return LeerlingenList;
+
         }
 
         public void AddLeerling(Leerling leerling, DateTime tot, Item item)

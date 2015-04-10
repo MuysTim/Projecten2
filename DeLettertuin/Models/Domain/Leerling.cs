@@ -14,6 +14,7 @@ namespace DeLettertuin
         public string Email { get; set; }
         public string Klas { get; set; }
 
+        public Leerling() { }
         public Leerling(string naam,string voornaam,string klas,string email,string adres, int id)
         {
             Naam = naam;

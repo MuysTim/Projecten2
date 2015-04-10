@@ -388,6 +388,8 @@
     <Content Include="Views\Uitlening\UitleningenView.cshtml" />
     <Content Include="Views\Uitlening\AddUitlening.cshtml" />
     <Content Include="Views\Uitlening\EditUitlening.cshtml" />
+    <Content Include="Views\Leerling\GetLeerling.cshtml" />
+    <Content Include="Views\Leerling\LeerlingenView.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -399,7 +401,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Item\" />
-    <Folder Include="Views\Leerling\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -11,7 +11,7 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
-    <tr style="background-color: #ABCE14">
+    <tr class="headtr">
         <th>
             @Html.DisplayNameFor(model => model.Id)
         </th>
@@ -30,27 +30,27 @@
         <th></th>
     </tr>
 
-    @foreach (var uitlening in Model) {
+    @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modeluitlening => uitlening.Id)
+                @Html.DisplayFor(modelItem => item.Id)
             </td>
             <td>
-                @Html.DisplayFor(modeluitlening => uitlening.Leerling)
+                @Html.DisplayFor(modelItem => item.Leerling)
             </td>
             <td>
-                @Html.DisplayFor(modeluitlening => uitlening.StartDatum)
+                @Html.DisplayFor(modelItem => item.StartDatum)
             </td>
             <td>
-                @Html.DisplayFor(modelUitlening => uitlening.EindDatum)
+                @Html.DisplayFor(modelItem => item.EindDatum)
             </td>
             <td>
-                @Html.DisplayFor(modelUitlening => uitlening.Item)
+                @Html.DisplayFor(modelItem => item.Item)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=uitlening.Id }) |
-                @Html.ActionLink("Details", "Details", new { id=uitlening.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id=uitlening.Id })
+                @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
             </td>
         </tr>
     }
