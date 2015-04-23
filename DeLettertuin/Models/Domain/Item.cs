@@ -13,12 +13,13 @@ namespace DeLettertuin
 
         }
 
-        protected Item(int id, string naam, bool inMediatheek, string omschrijving)
+        protected Item(int id, string naam, bool inMediatheek, string omschrijving, int leeftijd)
         {
             Id = id;
             Naam = naam;
             InMediatheek = inMediatheek;
             Omschrijving = omschrijving;
+            Leeftijd = leeftijd;
         }
 
 
@@ -30,6 +31,8 @@ namespace DeLettertuin
         public string Naam { get; set; }
 
         public int Id { get; set; }
+
+        public int Leeftijd { get; set; }
 
         public void IsUitgeleend()
         {

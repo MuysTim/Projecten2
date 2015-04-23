@@ -36,6 +36,16 @@ h2 {
     color: white;
 }
 
+#kader1{
+    height: 146px;
+    width: 235px;
+}
+
+#toevoegen {
+    height: 24px;
+    width: 24px;
+}
+
 .navibar{
     background-color:#8AC619;
     font-size: x-large;
