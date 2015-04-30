@@ -10,13 +10,14 @@ namespace DeLettertuin.Models.DAL
 {
     public class DeLettertuinContext : DbContext
     {
+        public DeLettertuinContext() : base("delettertuin")
+        { }
         public virtual DbSet<DVD> DvDs { get; set; }
         public virtual DbSet<Spel> Spellen { get; set; }
         public virtual DbSet<CD> CDs { get; set; }
         public virtual DbSet<Verteltas> Verteltassen { get; set; }
         public virtual DbSet<Item> Items { get; set; }
         public virtual DbSet<Boek> Boeken { get; set; }
-
         public virtual DbSet<Leerling> Leerlingen { get; set; }
         public virtual DbSet<Uitlening> Uitleningen { get; set; }
         public virtual DbSet<Thema> Themas { get; set; }

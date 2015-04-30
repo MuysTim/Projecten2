@@ -340,6 +340,7 @@
     <Compile Include="Controllers\ItemController.cs" />
     <Compile Include="Controllers\LeerlingController.cs" />
     <Compile Include="Controllers\UitleningController.cs" />
+    <Compile Include="Models\DAL\DeLettertuinInitializer.cs" />
     <Compile Include="Models\DAL\DeLettertuinContext.cs" />
     <Compile Include="Models\DAL\ItemRepository.cs" />
     <Compile Include="Models\DAL\LeerlingRepository.cs" />
@@ -374,6 +375,7 @@
     <Compile Include="Models\Domain\Uitlening.cs" />
     <Compile Include="Models\Domain\Verteltas.cs" />
     <Compile Include="Models\Domain\Vrijwilliger.cs" />
+    <Compile Include="ViewModels\LeerlingViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />

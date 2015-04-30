@@ -6,32 +6,40 @@ using System.Web;
 using System.Web.Mvc;
 using DeLettertuin.Models.DAL;
 using DeLettertuin.Models.Domain;
+using DeLettertuin.ViewModels;
 
 namespace DeLettertuin.Controllers
 {
     public class LeerlingController : Controller
     {
-        public List<Leerling> LeerlingenList = new List<Leerling>(); 
-        private ILeerlingRepository repos;
+        public IEnumerable<Leerling> LeerlingenList = new List<Leerling>(); 
+        private ILeerlingRepository leerlingRepository;
 
         public LeerlingController() { }
+        public LeerlingController(ILeerlingRepository leerlingRepository)
+        {
+            this.leerlingRepository = leerlingRepository;
+        }
 
         public ActionResult LeerlingenView()
         {
-            var model = GetLeerlingen();
-            return View(model);
+            IEnumerable<Leerling> leerlingen = leerlingRepository.FindAll().OrderBy(l => l.Naam);
+            IEnumerable<LeerlingIndexViewModel> vms =
+                leerlingen.Select(l => new LeerlingIndexViewModel(l)).ToList();
+            return View(vms);
+
         }
 
         public LeerlingController(DeLettertuinContext context)
         {
-            repos = new LeerlingRepository(context);
+            leerlingRepository = new LeerlingRepository(context);
         }
         
         public Collection<Leerling> Leerlingen { get; set; }
 
         public void RemoveLeerling(Leerling leerling)
         {
-            repos.Delete(leerling);
+            leerlingRepository.Delete(leerling);
         }
 
         public Uitlening GetLeerling()
@@ -39,7 +47,7 @@ namespace DeLettertuin.Controllers
             throw new System.NotImplementedException();
         }
 
-        public List<Leerling> GetLeerlingen()
+        public IEnumerable<Leerling> GetLeerlingen()
         {
             return LeerlingenList;
 

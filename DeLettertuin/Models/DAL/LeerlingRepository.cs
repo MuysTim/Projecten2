@@ -17,9 +17,9 @@ namespace DeLettertuin.Models.DAL
             Context = context;
             Leerlingen = Context.Leerlingen;
         }
-        public Leerling FindBy(int itemId)
+        public Leerling FindBy(int id)
         {
-            return Leerlingen.Find(itemId);
+            return Leerlingen.Find(id);
         }
 
         public IQueryable<Leerling> FindAll()

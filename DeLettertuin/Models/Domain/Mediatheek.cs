@@ -5,6 +5,7 @@ using System.Web.Services;
 using System.Web.Services.Protocols;
 using System.ComponentModel;
 using DeLettertuin.Models.DAL;
+using DeLettertuin.Models.Domain;
 
 namespace DeLettertuin
 {
