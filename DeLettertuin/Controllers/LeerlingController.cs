@@ -12,34 +12,25 @@ namespace DeLettertuin.Controllers
 {
     public class LeerlingController : Controller
     {
-        public IEnumerable<Leerling> LeerlingenList = new List<Leerling>(); 
-        private ILeerlingRepository leerlingRepository;
+        private ILeerlingRepository repos;
+        private DeLettertuinContext context;
 
         public LeerlingController() { }
         public LeerlingController(ILeerlingRepository leerlingRepository)
         {
-            this.leerlingRepository = leerlingRepository;
+            repos = leerlingRepository;
         }
 
-        public ActionResult LeerlingenView()
-        {
-            IEnumerable<Leerling> leerlingen = leerlingRepository.FindAll().OrderBy(l => l.Naam);
-            IEnumerable<LeerlingIndexViewModel> vms =
-                leerlingen.Select(l => new LeerlingIndexViewModel(l)).ToList();
-            return View(vms);
-
-        }
-
-        public LeerlingController(DeLettertuinContext context)
-        {
-            leerlingRepository = new LeerlingRepository(context);
-        }
-        
         public Collection<Leerling> Leerlingen { get; set; }
 
         public void RemoveLeerling(Leerling leerling)
         {
-            leerlingRepository.Delete(leerling);
+            repos.Delete(leerling);
+        }
+
+        public List<Leerling> GetLeerlingen()
+        {
+            return repos.FindAll().ToList();
         }
 
         public Uitlening GetLeerling()
@@ -47,20 +38,24 @@ namespace DeLettertuin.Controllers
             throw new System.NotImplementedException();
         }
 
-        public IEnumerable<Leerling> GetLeerlingen()
+        public void AddLeerling(Leerling leerling)
         {
-            return LeerlingenList;
-
+            repos.Add(leerling);
+            repos.SaveChanges();
         }
 
-        public void AddLeerling(Leerling leerling, DateTime tot, Item item)
+        public void EditLeerling(Leerling leerling)
         {
-            throw new System.NotImplementedException();
+            RemoveLeerling(repos.FindBy(leerling.Id));
+            AddLeerling(leerling);
         }
 
-        public Leerling GeefLeningAanLeerling(Leerling leerling, Uitlening uitlening)
+        public void GeefLeningAanLeerling(Leerling leerling, Uitlening uitlening)
         {
-            throw new System.NotImplementedException();
+            repos.FindBy(leerling.Id).LeenUit(uitlening);
+            repos.SaveChanges();
         }
-	}
+
+    }
+
 }

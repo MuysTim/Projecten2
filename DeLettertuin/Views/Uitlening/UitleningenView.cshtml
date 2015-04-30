@@ -7,9 +7,11 @@
 <div class="container">
 <h2>Uitleningen</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+    <p>
+        <a id="toevoegen" href="/Uitlening/AddUitlening">
+            <img id="toevoegen" src="@Url.Content("~/Images/toevoegen.png")" />
+        </a>
+    </p>
 <table class="table">
     <tr class="headtr">
         <th>

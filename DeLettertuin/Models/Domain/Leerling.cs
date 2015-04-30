@@ -9,28 +9,37 @@ namespace DeLettertuin
 {
     public class Leerling
     {
-        public int Id { get; set; }
-        public string Naam { get; set; }
         public string Voornaam { get; set; }
-        public string Klas { get; set; }
         public string Adres { get; set; }
         public string Email { get; set; }
-        public ICollection<Uitlening> Uitleningen { get; set; }
+        public string Klas { get; set; }
 
         public Leerling() { }
-        public Leerling(int id, string naam,string voornaam,string klas,string email,string adres)
+        public Leerling(string naam, string voornaam, string klas, string email, string adres, int id)
         {
-            Id = id;
             Naam = naam;
+            Id = id;
             Voornaam = voornaam;
-            Klas = klas;
-            Email = email;
             Adres = adres;
+            Email = email;
+            Klas = klas;
         }
 
-        public void LeenUit()
+        public ICollection<Uitlening> Uitleningen { get; set; }
+
+        public int Id { get; set; }
+
+        public string Naam { get; set; }
+
+        public void LeenUit(Uitlening uitlening)
         {
-            throw new System.NotImplementedException();
+            if (Uitleningen.Count >= 3)
+            {
+                throw new ApplicationException("De lener heeft meer dan 3 uitleningen");
+            }
+            Uitleningen.Add(uitlening);
         }
+
+
     }
 }
