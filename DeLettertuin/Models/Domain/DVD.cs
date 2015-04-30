@@ -12,8 +12,8 @@ namespace DeLettertuin
         public string Titel { get; set; }
         public string Soort { get; set; }
 
-        public DVD(int id, string naam, string soort,bool inMediatheek, string omschrijving)
-            : base(id, naam, inMediatheek, omschrijving)
+        public DVD(int id, string naam, string soort,bool inMediatheek, string omschrijving,int leeftijd)
+            : base(id, naam, inMediatheek, omschrijving,leeftijd)
         {
             Titel = naam;
             Soort = soort;

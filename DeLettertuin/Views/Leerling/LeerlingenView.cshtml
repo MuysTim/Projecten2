@@ -8,7 +8,9 @@
     <h2>Leerlingen</h2>
 
     <p>
-        @Html.ActionLink("Create New", "Create")
+        <a href='@Url.Action("Create New", "Create")'>
+        <img id="toevoegen" src='@Url.Content("~/Images/toevoegen.png")' />
+            </a>
     </p>
     <table class="table">
         <tr class="headtr">

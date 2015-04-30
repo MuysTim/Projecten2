@@ -16,7 +16,7 @@ namespace DeLettertuin
         public int Leeftijd { get; set;}
 
         public Boek(int id, string naam,string uitgeverij,string korte_inhoud, string auteur,int leeftijd, bool inMediatheek, string omschrijving)
-            : base(id, naam, inMediatheek, omschrijving)
+            : base(id, naam, inMediatheek, omschrijving,leeftijd)
         {
             Auteur = auteur;
             Titel = naam;

@@ -9,8 +9,8 @@ namespace DeLettertuin
 {
     public class Verteltas : Item
     {
-        public Verteltas(int id, string naam, bool inMediatheek, string omschrijving)
-            : base(id, naam, inMediatheek, omschrijving)
+        public Verteltas(int id, string naam, bool inMediatheek, string omschrijving, int leeftijd)
+            : base(id, naam, inMediatheek, omschrijving, leeftijd)
         {
 
         }
