@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -20,11 +22,24 @@ namespace DeLettertuin.ViewModels
             Adres = l.Adres;
             Email = l.Email;
         }
+
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public int Id { get; set; }
+        [Display(Name = "Naam")]
+        [Required]
         public string Naam { get; set; }
+        [Display(Name = "Voornaam")]
+        [Required]
         public string Voornaam { get; set; }
+        [Display(Name = "Klas")]
+        [Required]
         public string Klas { get; set; }
+        [Display(Name = "Adres")]
+        [Required]
         public string Adres { get; set; }
+        [Display(Name = "Email")]
+        [Required]
         public string Email { get; set; }
 
     }
