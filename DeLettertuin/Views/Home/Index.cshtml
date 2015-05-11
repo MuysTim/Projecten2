@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <div class="container">
+        <h2>Welkom!</h2>
+        <div id="kader1" class="kader col-md-3">
+            <h2>@Html.ActionLink("Items", "ItemsView", "Item")</h2>
+            <p>
+                Klik op
+                items
+                om de lijst van beschikbare boeken, spellen, cd´s en dvd´s te bekijken.
+            </p>
+        </div>
+        <div class="col-md-1"></div>
+        <div id="kader1" class="kader col-md-3">
+            <h2>@Html.ActionLink("Leerlingen","GetLeerlingen", "Leerling")</h2>
+            <p>Klik op leerlingen om de lijst van leerlingen te bekijken.
+            </p>
+        </div>
+        <div class="col-md-1"></div>
+        <div id="kader1" class="kader col-md-3">
+            <h2>@Html.ActionLink("Uitleningen","UitleningenView", "Uitlening")</h2>
+            <p>
+                Klik op uitleningen om de lijst van lopende uitleningen te bekijken en beheren.
+            </p>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+
