@@ -379,6 +379,7 @@
     <Compile Include="Models\DAL\Mapper\DvdsMapper.cs" />
     <Compile Include="Models\DAL\Mapper\ItemMapper.cs" />
     <Compile Include="Models\DAL\Mapper\LeerlingMapper.cs" />
+    <Compile Include="Models\DAL\Mapper\Mediatheekmapper.cs" />
     <Compile Include="Models\DAL\Mapper\SpellenMapper.cs" />
     <Compile Include="Models\DAL\MediatheekRepository.cs" />
     <Compile Include="Models\DAL\SpelRepository.cs" />
@@ -387,7 +388,6 @@
     <Compile Include="Models\Domain\Boek.cs" />
     <Compile Include="Models\Domain\CD.cs" />
     <Compile Include="Models\Domain\DVD.cs" />
-    <Compile Include="Models\Domain\Gebruiker.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

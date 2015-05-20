@@ -6,7 +6,9 @@ namespace DeLettertuin
     public class Gebruiker
     {
         private Mediatheek Mediatheek;
-    
+
+        public int Id;
+
         public void LogIn()
         {
             throw new System.NotImplementedException();

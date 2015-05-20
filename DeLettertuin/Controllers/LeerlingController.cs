@@ -58,7 +58,8 @@ namespace DeLettertuin.Controllers
 
         public ActionResult LeerlingenView()
         {
-            return View();
+            var leerlingen = leerlingRepository.FindAll();
+            return View(leerlingen);
         }
 
         private void MapToLeerling(LeerlingViewModel lvm, Leerling leerling)

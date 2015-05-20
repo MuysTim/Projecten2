@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Web;
 using DeLettertuin.Domain;
+using DeLettertuin.Models.DAL.Mapper;
 using DeLettertuin.Models.Domain;
 
 namespace DeLettertuin.Models.DAL
@@ -22,7 +23,7 @@ namespace DeLettertuin.Models.DAL
         public virtual DbSet<Leerling> Leerlingen { get; set; }
         public virtual DbSet<Uitlening> Uitleningen { get; set; }
         public virtual DbSet<Thema> Themas { get; set; }
-        public virtual DbSet<Mediatheek> Mediatheken { get; set; } 
+        public virtual DbSet<Mediatheek> Mediatheken { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -8,7 +8,7 @@ using DeLettertuin.Models.Domain;
 
 namespace DeLettertuin
 {
-    public class Vrijwilliger : Gebruiker
+    public class Vrijwilliger //: Gebruiker
     {
         public void Uitlenen(Leerling l, DateTime tot, Item i)
         {

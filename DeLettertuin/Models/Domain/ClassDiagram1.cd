@@ -10,35 +10,26 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>BBAACAEAAAMBCAIAAgACAIAgAQBAAABACAgAJQgIDAA=</HashCode>
+      <HashCode>BBgCAAFAAAMBiAIAAgCCAIAggQQAAQBAKAiAJAAADAA=</HashCode>
       <FileName>Models\Domain\Mediatheek.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
-      <Property Name="Gebruikers" />
       <Property Name="Items" />
       <Property Name="Uitleningen" />
-      <Property Name="Leners" />
       <Property Name="Themas" />
     </ShowAsCollectionAssociation>
-  </Class>
-  <Class Name="DeLettertuin.Gebruiker" Collapsed="true">
-    <Position X="7.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAAAQAAAAAAAA=</HashCode>
-      <FileName>Models\Domain\Gebruiker.cs</FileName>
-    </TypeIdentifier>
   </Class>
   <Class Name="DeLettertuin.Item" Collapsed="true">
     <Position X="2.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAABCAAAAAAAAAACAAAIAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAACAAAAAAABCAAAAAAAAAACAAAIAAAAAA=</HashCode>
       <FileName>Models\Domain\Item.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DeLettertuin.Uitlening" Collapsed="true">
     <Position X="5.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAACAAAAAAAAAAAAAAAAAAAEACAAAAAAAgAAAAAAAAA=</HashCode>
+      <HashCode>IAACAAAAAAAAEAAAAAAAAAAEACAAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>Models\Domain\Uitlening.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -63,29 +54,37 @@
     </TypeIdentifier>
   </Class>
   <Class Name="DeLettertuin.Boek" Collapsed="true">
-    <Position X="0.5" Y="8" Width="1.5" />
-    <InheritanceLine Type="DeLettertuin.Item" FixedToPoint="true">
+    <Position X="0.5" Y="8.25" Width="1.5" />
+    <InheritanceLine Type="DeLettertuin.Item" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="3.5" Y="4.312" />
-        <Point X="3.5" Y="8.346" />
-        <Point X="2" Y="8.346" />
+        <Point X="4.062" Y="4.312" />
+        <Point X="4.062" Y="4.466" />
+        <Point X="4.306" Y="4.466" />
+        <Point X="4.306" Y="4.778" />
+        <Point X="4.15" Y="4.778" />
+        <Point X="4.15" Y="5.726" />
+        <Point X="3.963" Y="5.726" />
+        <Point X="3.963" Y="8.596" />
+        <Point X="3.583" Y="8.596" Type="JumpStart" />
+        <Point X="3.417" Y="8.596" Type="JumpEnd" />
+        <Point X="2" Y="8.596" />
       </Path>
     </InheritanceLine>
     <AssociationLine Name="Themas" Type="DeLettertuin.Thema" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="2" Y="8.54" />
-        <Point X="3.417" Y="8.54" Type="JumpStart" />
-        <Point X="3.583" Y="8.54" Type="JumpEnd" />
-        <Point X="4.153" Y="8.54" Type="JumpStart" />
-        <Point X="4.329" Y="8.54" Type="JumpEnd" />
-        <Point X="7.635" Y="8.54" Type="JumpStart" />
-        <Point X="7.802" Y="8.54" Type="JumpEnd" />
-        <Point X="8.312" Y="8.54" />
+        <Point X="2" Y="8.79" />
+        <Point X="3.417" Y="8.79" Type="JumpStart" />
+        <Point X="3.583" Y="8.79" Type="JumpEnd" />
+        <Point X="4.153" Y="8.79" Type="JumpStart" />
+        <Point X="4.329" Y="8.79" Type="JumpEnd" />
+        <Point X="7.635" Y="8.79" Type="JumpStart" />
+        <Point X="7.802" Y="8.79" Type="JumpEnd" />
+        <Point X="8.312" Y="8.79" />
         <Point X="8.312" Y="6.562" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAABAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAABAAAAAEACAAAAQAAAAIAAAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>Models\Domain\Boek.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -93,29 +92,31 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="DeLettertuin.DVD">
-    <Position X="0.5" Y="11.25" Width="1.5" />
+    <Position X="0.5" Y="11.75" Width="1.5" />
     <InheritanceLine Type="DeLettertuin.Item" FixedToPoint="true">
       <Path>
         <Point X="3.5" Y="4.312" />
-        <Point X="3.5" Y="11.791" />
-        <Point X="2" Y="11.791" />
+        <Point X="3.5" Y="12.291" />
+        <Point X="2" Y="12.291" />
       </Path>
     </InheritanceLine>
     <AssociationLine Name="Themas" Type="DeLettertuin.Thema" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="2" Y="11.52" />
-        <Point X="3.417" Y="11.52" Type="JumpStart" />
-        <Point X="3.583" Y="11.52" Type="JumpEnd" />
-        <Point X="4.153" Y="11.52" Type="JumpStart" />
-        <Point X="4.329" Y="11.52" Type="JumpEnd" />
-        <Point X="7.635" Y="11.52" Type="JumpStart" />
-        <Point X="7.802" Y="11.52" Type="JumpEnd" />
-        <Point X="8.312" Y="11.52" />
+        <Point X="2" Y="12.02" />
+        <Point X="3.417" Y="12.02" Type="JumpStart" />
+        <Point X="3.583" Y="12.02" Type="JumpEnd" />
+        <Point X="4.153" Y="12.02" Type="JumpStart" />
+        <Point X="4.329" Y="12.02" Type="JumpEnd" />
+        <Point X="6.75" Y="12.02" />
+        <Point X="6.75" Y="11.5" />
+        <Point X="7.635" Y="11.5" Type="JumpStart" />
+        <Point X="7.802" Y="11.5" Type="JumpEnd" />
+        <Point X="8.312" Y="11.5" />
         <Point X="8.312" Y="6.562" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>Models\Domain\DVD.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -148,7 +149,7 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>Models\Domain\CD.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -168,10 +169,12 @@
       <Path>
         <Point X="7" Y="12.523" />
         <Point X="4.246" Y="12.523" />
-        <Point X="4.246" Y="7.252" />
-        <Point X="3.583" Y="7.252" Type="JumpStart" />
-        <Point X="3.417" Y="7.252" Type="JumpEnd" />
-        <Point X="2" Y="7.252" />
+        <Point X="4.246" Y="6.252" />
+        <Point X="4.046" Y="6.252" Type="JumpStart" />
+        <Point X="3.879" Y="6.252" Type="JumpEnd" />
+        <Point X="3.583" Y="6.252" Type="JumpStart" />
+        <Point X="3.417" Y="6.252" Type="JumpEnd" />
+        <Point X="2.25" Y="6.252" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="CDs" Type="DeLettertuin.CD" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
@@ -188,10 +191,12 @@
       <Path>
         <Point X="7" Y="12.523" />
         <Point X="4.236" Y="12.523" />
-        <Point X="4.236" Y="8.152" />
-        <Point X="3.583" Y="8.152" Type="JumpStart" />
-        <Point X="3.417" Y="8.152" Type="JumpEnd" />
-        <Point X="2" Y="8.152" />
+        <Point X="4.236" Y="8.402" />
+        <Point X="4.046" Y="8.402" Type="JumpStart" />
+        <Point X="3.879" Y="8.402" Type="JumpEnd" />
+        <Point X="3.583" Y="8.402" Type="JumpStart" />
+        <Point X="3.417" Y="8.402" Type="JumpEnd" />
+        <Point X="2" Y="8.402" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -207,16 +212,16 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="DeLettertuin.Spel">
-    <Position X="0.5" Y="6.25" Width="1.5" />
+    <Position X="0.75" Y="5.25" Width="1.5" />
     <InheritanceLine Type="DeLettertuin.Item" FixedToPoint="true">
       <Path>
         <Point X="3.5" Y="4.312" />
-        <Point X="3.5" Y="6.945" />
-        <Point X="2" Y="6.945" />
+        <Point X="3.5" Y="5.945" />
+        <Point X="2.25" Y="5.945" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAEACAAAAAAABAIAAAAAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>Models\Domain\Spel.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>

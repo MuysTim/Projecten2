@@ -16,7 +16,7 @@ namespace DeLettertuin
     {
         public Mediatheek()
         {
-            Gebruikers = new List<Gebruiker>();
+            //Gebruikers = new List<Gebruiker>();
             Items = new List<Item>();
             Uitleningen = new List<Uitlening>();
             Leerlingen = new List<Leerling>();
@@ -30,7 +30,7 @@ namespace DeLettertuin
 
         public int Id { get; set; }
 
-        public ICollection<Gebruiker> Gebruikers { get; set; }
+        //public ICollection<Gebruiker> Gebruikers { get; set; }
 
         public ICollection<Item> Items { get; set; }
 

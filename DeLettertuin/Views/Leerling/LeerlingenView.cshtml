@@ -2,13 +2,13 @@
 @using System.Security.Cryptography.X509Certificates
 @using System.Web.Mvc.Html
 @using System.Web.UI.WebControls
-@using DeLettertuin.Models.DAL
+
 @using DeLettertuin.Models.Domain
 @using DeLettertuin.Controllers
 @using DeLettertuin.Models.ViewModel
 @using Microsoft.Ajax.Utilities
 @using Microsoft.AspNet.Identity
-@model IEnumerable<DeLettertuin.Uitlening>
+@model IEnumerable<DeLettertuin.Domain.Leerling>
 @{
     ViewBag.Title = "LeerlingenView";
     }
@@ -34,9 +34,9 @@
                 }
 
             </tr>
-
-          @foreach (var item in Model)
-          { 
+@if (Model != null) {
+          foreach (var item in Model)
+           {
                <tr >
     
 
@@ -51,6 +51,6 @@
 
                </tr>
            }
-
+}
 
         </table>
