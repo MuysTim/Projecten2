@@ -33,10 +33,10 @@ namespace DeLettertuin.Controllers
             return LeerlingenList;
         }
 
-        public Uitlening GetLeerling()
-        {
-            throw new System.NotImplementedException();
-        }
+        //public Uitlening GetLeerling()
+        //{
+        //    throw new System.NotImplementedException();
+        //}
 
         public void AddLeerling(Leerling leerling)
         {
@@ -50,11 +50,11 @@ namespace DeLettertuin.Controllers
             AddLeerling(leerling);
         }
 
-        public void GeefLeningAanLeerling(Leerling leerling, Uitlening uitlening)
-        {
-            leerlingRepository.FindBy(leerling.Id).LeenUit(uitlening);
-            leerlingRepository.SaveChanges();
-        }
+        //public void GeefLeningAanLeerling(Leerling leerling, Uitlening uitlening)
+        //{
+        //    leerlingRepository.FindBy(leerling.Id).LeenUit(uitlening);
+        //    leerlingRepository.SaveChanges();
+        //}
 
         public ActionResult LeerlingenView()
         {

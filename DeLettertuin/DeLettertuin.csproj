@@ -361,56 +361,22 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\BoekController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IndexLeerlingViewModel.cs" />
-    <Compile Include="Controllers\ItemController.cs" />
     <Compile Include="Controllers\LeerlingController.cs" />
-    <Compile Include="Controllers\UitleningController.cs" />
-    <Compile Include="Models\DAL\BoekRepository.cs" />
-    <Compile Include="Models\DAL\CdRepository.cs" />
     <Compile Include="Models\DAL\DeLettertuinInitializer.cs" />
     <Compile Include="Models\DAL\DeLettertuinContext.cs" />
-    <Compile Include="Models\DAL\DvdRepository.cs" />
-    <Compile Include="Models\DAL\ItemRepository.cs" />
     <Compile Include="Models\DAL\LeerlingRepository.cs" />
-    <Compile Include="Models\DAL\Mapper\BoekenMapper.cs" />
-    <Compile Include="Models\DAL\Mapper\CdsMapper.cs" />
-    <Compile Include="Models\DAL\Mapper\DvdsMapper.cs" />
-    <Compile Include="Models\DAL\Mapper\ItemMapper.cs" />
     <Compile Include="Models\DAL\Mapper\LeerlingMapper.cs" />
-    <Compile Include="Models\DAL\Mapper\Mediatheekmapper.cs" />
-    <Compile Include="Models\DAL\Mapper\SpellenMapper.cs" />
-    <Compile Include="Models\DAL\MediatheekRepository.cs" />
-    <Compile Include="Models\DAL\SpelRepository.cs" />
-    <Compile Include="Models\DAL\UitleningRepository.cs" />
-    <Compile Include="Models\DAL\VerteltasRepository.cs" />
-    <Compile Include="Models\Domain\Boek.cs" />
-    <Compile Include="Models\Domain\CD.cs" />
-    <Compile Include="Models\Domain\DVD.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Domain\IItem.cs" />
-    <Compile Include="Models\Domain\IItemRepository.cs" />
     <Compile Include="Models\Domain\ILeerlingRepository.cs" />
-    <Compile Include="Models\Domain\IMediatheekRepository.cs" />
-    <Compile Include="Models\Domain\Item.cs" />
-    <Compile Include="Models\Domain\IUitleningenRepository.cs" />
     <Compile Include="Models\Domain\Leerling.cs" />
-    <Compile Include="Models\Domain\Medewerker.cs" />
-    <Compile Include="Models\Domain\Mediatheek.cs" />
-    <Compile Include="ViewModels\BoekViewModel.cs" />
-    <Compile Include="ViewModels\ItemViewModel.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\Domain\Spel.cs" />
-    <Compile Include="Models\Domain\Thema.cs" />
-    <Compile Include="Models\Domain\Uitlening.cs" />
-    <Compile Include="Models\Domain\Verteltas.cs" />
-    <Compile Include="Models\Domain\Vrijwilliger.cs" />
     <Compile Include="ViewModels\LeerlingViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

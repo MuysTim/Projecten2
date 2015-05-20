@@ -26,16 +26,16 @@ namespace DeLettertuin.Domain
             Klas = klas;
         }
 
-        public  List<Uitlening> Uitleningen { get; set; }
+        //public  List<Uitlening> Uitleningen { get; set; }
 
-        public void LeenUit(Uitlening uitlening)
-        {
-            if (Uitleningen.Count >= 3)
-            {
-                throw new ApplicationException("De lener heeft meer dan 3 uitleningen");
-            }
-            Uitleningen.Add(uitlening);
-        }
+        //public void LeenUit(Uitlening uitlening)
+        //{
+        //    if (Uitleningen.Count >= 3)
+        //    {
+        //        throw new ApplicationException("De lener heeft meer dan 3 uitleningen");
+        //    }
+        //    Uitleningen.Add(uitlening);
+        //}
 
 
     }

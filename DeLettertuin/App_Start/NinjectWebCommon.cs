@@ -64,13 +64,13 @@ namespace DeLettertuin.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<IBoekRepository>().To<BoekRepository>().InRequestScope();
-            kernel.Bind<ICdRepository>().To<CdRepository>().InRequestScope();
-            kernel.Bind<IDvdRepository>().To<DvdRepository>().InRequestScope();
-            kernel.Bind<ISpelRepository>().To<SpelRepository>().InRequestScope();
-            kernel.Bind<IVerteltasRepository>().To<VerteltasRepository>().InRequestScope();
+            //kernel.Bind<IBoekRepository>().To<BoekRepository>().InRequestScope();
+            //kernel.Bind<ICdRepository>().To<CdRepository>().InRequestScope();
+            //kernel.Bind<IDvdRepository>().To<DvdRepository>().InRequestScope();
+            //kernel.Bind<ISpelRepository>().To<SpelRepository>().InRequestScope();
+            //kernel.Bind<IVerteltasRepository>().To<VerteltasRepository>().InRequestScope();
             kernel.Bind<ILeerlingRepository>().To<LeerlingRepository>().InRequestScope();
-            kernel.Bind<IMediatheekRepository>().To<MediatheekRepository>().InRequestScope();
+            //kernel.Bind<IMediatheekRepository>().To<MediatheekRepository>().InRequestScope();
             kernel.Bind<DeLettertuinContext>().ToSelf().InRequestScope();
         }        
     }

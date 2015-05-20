@@ -3,9 +3,10 @@
 @using System.Web.Mvc.Html
 @using System.Web.UI.WebControls
 
+@using DeLettertuin.Models.DAL
 @using DeLettertuin.Models.Domain
 @using DeLettertuin.Controllers
-@using DeLettertuin.Models.ViewModel
+@using DeLettertuin.ViewModels
 @using Microsoft.Ajax.Utilities
 @using Microsoft.AspNet.Identity
 @model IEnumerable<DeLettertuin.Domain.Leerling>
@@ -34,10 +35,10 @@
                 }
 
             </tr>
-@if (Model != null) {
-          foreach (var item in Model)
+
+          @foreach (var item in Leerling)
            {
-               <tr >
+               <tr>
     
 
                    @foreach (var p in item.GetType().GetProperties())
@@ -51,6 +52,6 @@
 
                </tr>
            }
-}
+
 
         </table>
