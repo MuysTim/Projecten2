@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -6,8 +7,8 @@ namespace DeLettertuin.Domain
 {
     public class Leerling
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        //[Key]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public string Naam { get; set; }
         public string Voornaam { get; set; }
@@ -25,7 +26,7 @@ namespace DeLettertuin.Domain
             Klas = klas;
         }
 
-        public virtual Collection<Uitlening> Uitleningen { get; set; }
+        public  List<Uitlening> Uitleningen { get; set; }
 
         public void LeenUit(Uitlening uitlening)
         {

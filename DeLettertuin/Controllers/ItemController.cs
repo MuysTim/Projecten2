@@ -16,12 +16,10 @@ namespace DeLettertuin.Controllers
         public static DeLettertuinContext Context = new DeLettertuinContext();
         private ItemViewModel vm;
 
-        //public ActionResult Item()
-        //{
-        //    ViewBag.Message = "Klik op het gewenste item om deze te bewerken of te verwijderen.";
-
-        //    return View();
-        //}
+        public ActionResult ItemView()
+        {
+            return View();
+        }
 
 	}
 }

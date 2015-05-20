@@ -201,6 +201,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Images\edit.png" />
     <Content Include="Images\KrekelBackground.jpg" />
     <Content Include="Images\lgo_krekelNew.png" />
     <Content Include="Images\toevoegen.png" />
@@ -360,6 +361,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BoekController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IndexLeerlingViewModel.cs" />
     <Compile Include="Controllers\ItemController.cs" />
@@ -398,6 +400,7 @@
     <Compile Include="Models\Domain\Leerling.cs" />
     <Compile Include="Models\Domain\Medewerker.cs" />
     <Compile Include="Models\Domain\Mediatheek.cs" />
+    <Compile Include="ViewModels\BoekViewModel.cs" />
     <Compile Include="ViewModels\ItemViewModel.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
@@ -425,6 +428,8 @@
     <Content Include="Views\Uitlening\EditUitlening.cshtml" />
     <Content Include="Views\Leerling\GetLeerling.cshtml" />
     <Content Include="Views\Leerling\LeerlingenView.cshtml" />
+    <Content Include="Views\Item\ItemView.cshtml" />
+    <Content Include="Views\Boek\BoekenView.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -435,8 +440,10 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="obj\Debug\TempPE\" />
-    <Folder Include="Views\ItemViewModel\" />
-    <Folder Include="Views\Item\" />
+    <Folder Include="Views\CD\" />
+    <Folder Include="Views\DVD\" />
+    <Folder Include="Views\Spel\" />
+    <Folder Include="Views\Verteltas\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

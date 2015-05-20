@@ -1,6 +1,14 @@
 ﻿@using DeLettertuin.Domain
-@model IEnumerable<DeLettertuin.ViewModels.LeerlingIndexViewModel>
-
+@using System.Security.Cryptography.X509Certificates
+@using System.Web.Mvc.Html
+@using System.Web.UI.WebControls
+@using DeLettertuin.Models.DAL
+@using DeLettertuin.Models.Domain
+@using DeLettertuin.Controllers
+@using DeLettertuin.Models.ViewModel
+@using Microsoft.Ajax.Utilities
+@using Microsoft.AspNet.Identity
+@model IEnumerable<DeLettertuin.Uitlening>
 @{
     ViewBag.Title = "LeerlingenView";
     }
@@ -18,35 +26,31 @@
 
                 @foreach (var p in typeof(Leerling).GetProperties())
                 {
-                    if (!p.Name.Equals("Leerlingen") && !p.Name.Equals("Adres") && !p.Name.Equals("Email"))
-                    {
-                        <th>
-                            @p.Name
-                        </th>
-                    }
+                    
+                    <th>
+                        @p.Name
+                    </th>
+                    
                 }
 
             </tr>
-          @foreach (var l in Model)
-{
-    <tr>
-        <td>
-            @Html.ActionLink(" ", "EditLeerling", new { id = l.Id }, new { @class = "modal-link btn btn-success btnEdit " })
+@if (Model != null) {
+          foreach (var item in Model)
+           {
+               <tr >
+    
 
+                   @foreach (var p in item.GetType().GetProperties())
+                   {
+                       if (!p.Name.Equals("Uitleningen") && !p.Name.Equals("Straat") && !p.Name.Equals("HuisNr") && !p.Name.Equals("Postcode") && !p.Name.Equals("Gemeente") && !p.Name.Equals("Email"))
+                       {
+                       <td class="" > @item.GetType().GetProperty(p.Name).GetValue(item)</td>
+                       }
 
-            @Html.ActionLink(" ", "RemoveLeerling", new { id = l.Id }, new { @class = "modal-link btn btn-success btnRmv" })
+                   }
 
-        </td>
-        @foreach (var p in l.GetType().GetProperties())
-        {
-            if (!p.Name.Equals("Uitleningen") && !p.Name.Equals("Straat") && !p.Name.Equals("HuisNr") && !p.Name.Equals("Postcode") && !p.Name.Equals("Gemeente") && !p.Name.Equals("Email"))
-            {
-                <td class="">@l.GetType().GetProperty(p.Name).GetValue(l)</td>
-            }
-
-        }
-
-    </tr>
+               </tr>
+           }
 }
 
         </table>

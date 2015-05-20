@@ -1,0 +1,63 @@
+﻿@using DeLettertuin.Domain
+@using System.Security.Cryptography.X509Certificates
+@using System.Web.Mvc.Html
+@using System.Web.UI.WebControls
+@using DeLettertuin.Models.DAL
+@using DeLettertuin.Models.Domain
+@using DeLettertuin.Controllers
+@using DeLettertuin.Models.ViewModel
+@using Microsoft.Ajax.Utilities
+@using Microsoft.AspNet.Identity
+
+@{
+    ViewBag.Title = "BoekenView";
+}
+
+
+<h2>Boeken</h2>
+<hr/>
+<table class="table">
+    <tr class="headtr">
+        <th>
+            <a href='@Url.Action("Create New", "Create")'>
+                <img id="toevoegen" src='@Url.Content("~/Images/toevoegen.png")' />
+            </a>
+        </th>
+
+        @foreach (var p in typeof(Boek).GetProperties())
+        {
+            if (!p.Name.Equals("Uitlening") && !p.Name.Equals("Korte_Inhoud"))
+            {
+                <th>
+                    @p.Name
+                </th>
+            }
+        }
+
+    </tr>
+    @foreach (var l in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(" ", "EditBoek", new { id = l.Id }, new { @class = "EditBtn" })
+
+
+                @Html.ActionLink(" ", "RemoveBoek", new { id = l.Id }, new { @class = "modal-link btn btn-success btnRmv" })
+
+            </td>
+            @foreach (var p in l.GetType().GetProperties())
+            {
+                if (!p.Name.Equals("Uitleningen") && !p.Name.Equals("Straat") && !p.Name.Equals("HuisNr") && !p.Name.Equals("Postcode") && !p.Name.Equals("Gemeente") && !p.Name.Equals("Email"))
+                {
+                    <td class="">@l.GetType().GetProperty(p.Name).GetValue(l)</td>
+                }
+
+            }
+
+        </tr>
+    }
+
+</table>
+
+
+
