@@ -1,62 +1,52 @@
-﻿@model IEnumerable<DeLettertuin.ViewModels.LeerlingIndexViewModel>
+﻿@using DeLettertuin.Domain
+@model IEnumerable<DeLettertuin.ViewModels.LeerlingIndexViewModel>
 
 @{
     ViewBag.Title = "LeerlingenView";
-}
+    }
 
-<div class="container">
-    <h2>Leerlingen</h2>
 
-    <p>
-        <a href='@Url.Action("Create New", "Create")'>
-        <img id="toevoegen" src='@Url.Content("~/Images/toevoegen.png")' />
-            </a>
-    </p>
-    <table class="table">
-        <tr class="headtr">
-            <th>
-                @Html.DisplayNameFor(model => model.Naam)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Voornaam)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Klas)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Adres)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th></th>
-        </tr>
+<h2>Leerlingen</h2>
+<hr />
+        <table class="table">
+            <tr class="headtr">
+                <th>
+                    <a href='@Url.Action("Create New", "Create")'>
+                        <img id="toevoegen" src='@Url.Content("~/Images/toevoegen.png")' />
+                    </a>
+                </th>
 
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Naam)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Voornaam)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Klas)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Adres)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Email)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-                </td>
+                @foreach (var p in typeof(Leerling).GetProperties())
+                {
+                    if (!p.Name.Equals("Leerlingen") && !p.Name.Equals("Adres") && !p.Name.Equals("Email"))
+                    {
+                        <th>
+                            @p.Name
+                        </th>
+                    }
+                }
+
             </tr>
+          @foreach (var l in Model)
+{
+    <tr>
+        <td>
+            @Html.ActionLink(" ", "EditLeerling", new { id = l.Id }, new { @class = "modal-link btn btn-success btnEdit " })
+
+
+            @Html.ActionLink(" ", "RemoveLeerling", new { id = l.Id }, new { @class = "modal-link btn btn-success btnRmv" })
+
+        </td>
+        @foreach (var p in l.GetType().GetProperties())
+        {
+            if (!p.Name.Equals("Uitleningen") && !p.Name.Equals("Straat") && !p.Name.Equals("HuisNr") && !p.Name.Equals("Postcode") && !p.Name.Equals("Gemeente") && !p.Name.Equals("Email"))
+            {
+                <td class="">@l.GetType().GetProperty(p.Name).GetValue(l)</td>
+            }
+
         }
 
-    </table>
-</div>
+    </tr>
+}
+
+        </table>

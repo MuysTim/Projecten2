@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity.Validation;
 using System.Linq;
+using DeLettertuin.Domain;
 using DeLettertuin.Models.Domain;
 
 namespace DeLettertuin.Models.DAL

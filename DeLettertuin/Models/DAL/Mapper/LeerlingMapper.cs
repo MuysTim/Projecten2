@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Web;
+using DeLettertuin.Domain;
 using DeLettertuin.Models.Domain;
 
 namespace DeLettertuin.Models.DAL.Mapper

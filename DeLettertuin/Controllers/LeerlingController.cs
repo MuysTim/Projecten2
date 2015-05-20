@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DeLettertuin.Domain;
 using DeLettertuin.Models.DAL;
 using DeLettertuin.Models.Domain;
 using DeLettertuin.ViewModels;

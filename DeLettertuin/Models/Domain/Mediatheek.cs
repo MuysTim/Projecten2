@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Services;
 using System.Web.Services.Protocols;
 using System.ComponentModel;
+using DeLettertuin.Domain;
 using DeLettertuin.Models.DAL;
 using DeLettertuin.Models.DAL.Mapper;
 using DeLettertuin.Models.Domain;
